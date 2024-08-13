@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2022" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "lib": [
+      "es2022",
+      "dom"
+    ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+
+    /* Modules */
+    "module": "commonjs" /* Specify what module code is generated. */,
+
+    /* Emit */
+    "sourceMap": true /* Create source map files for emitted JavaScript files. */,
+    "outDir": "lib" /* Specify an output folder for all emitted files. */,
+
+    /* Interop Constraints */
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+
+    /* Completeness */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  }
+}

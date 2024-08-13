@@ -1,0 +1,30 @@
+{
+  "name": "dify-firebase-functions-slack-bolt-sample",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "yukinagae <yuki.nagae1130@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "check": "biome check ./src",
+    "fix": "biome check --write ./src",
+    "emulator": "npm run build && firebase emulators:start --inspect-functions",
+    "deploy": "npm run build && firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.19.0",
+    "axios": "^1.7.3",
+    "express": "^4.19.2",
+    "firebase-functions": "^5.0.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
